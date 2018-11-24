@@ -1,2 +1,3 @@
-# midi-to-guitar-tab
-python tool for converting an ableton midi melody file into plaintext guitar tabs
+# Moodoo
+
+Python program for displaying / converting an midi file exported from ableton (containg a melody) into plaintext guitar tabs.
