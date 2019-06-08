@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 nbconvert = "*"
+mido = "*"
+ipykernel = "*"
 
 [dev-packages]
 rope = "*"
