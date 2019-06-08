@@ -64,7 +64,7 @@ class moodoo:
     def get_note_bag_list(self):
         return self.note_bag_list
 
-    def note_bag_list_to_visual(n):
+    def note_bag_list_to_visual(self,n):
         def bag_to_visual(b):
             def tuple_to_visual(t):
                 """
