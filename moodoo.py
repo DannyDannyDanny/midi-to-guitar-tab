@@ -4,8 +4,6 @@ from pynput.keyboard import Key, Listener
 import os
 
 class moodoo:
-    """A simple example class"""
-
     # notes in an octave
     notes = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B']
     # root notes in standard tuned guitar
@@ -16,7 +14,6 @@ class moodoo:
     # frets on guitar
     frets_on_guitar = 24
     v = 4
-
 
     def __init__(self, path='midifiles/vapor.mid'):
         # load midifile
@@ -55,22 +52,14 @@ class moodoo:
                 self.note_dict[(note,note_octave)].append((string_number,fret))
 
         self.note_bag_list = []
-        print('octave\t|note\t|playable(string,fret)')
+        if self.debug: print('octave\t|note\t|playable(string,fret)')
         for oct,note in self.notelist:
             playable = self.note_dict[note,oct+1] #TODO
             self.note_bag_list.append(playable)
-            print(str(oct)+'\t|'+note+'\t|'+str(playable))
+            if self.debug: print(str(oct)+'\t|'+note+'\t|'+str(playable))
 
+    def get_notelist(self):
+        return self.notelist
 
     def get_note_bag_list(self):
         return self.note_bag_list
-
-
-note = 0
-# dat = []
-# dat.append([('A',1),('B',2),('C',3)])
-# dat.append([('D',4),('E',5),('F',6)])
-# dat.append([('G',7),('H',8),('I',9)])
-
-m = moodoo('midifiles/sad_rude2.mid')
-dat = m.get_note_bag_list()
