@@ -10,7 +10,10 @@ m = moodoo('midifiles/sad_rude2.mid')
 notelist = m.get_notelist()
 notebaglist = m.get_note_bag_list()
 vislist = m.note_bag_list_to_visual(notebaglist)
-print(vislist)
+for visnote,notenote in zip(vislist,notelist):
+    print(notenote,'\t<',3*'-',len(visnote))
+    for visnotevar in visnote:
+        print(visnotevar)
 # %%
 
 for note in vislist:
