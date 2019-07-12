@@ -16,8 +16,10 @@ for visnote,notenote in zip(vislist,notelist):
         print(visnotevar)
 # %%
 
-for note in vislist:
-    print([vis for vis in note][0])
+position_index_list = [(0,len(n)) for n in notebaglist]
+notebaglist
+for note,i in zip(vislist,position_index_list):
+    print([vis for vis in note][0],i[0],'/',i[1])
 
 # %%
 for i in zip(notelist,vislist):
