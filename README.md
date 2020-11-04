@@ -2,6 +2,9 @@
 
 Python program for displaying / converting an midi file exported from ableton (containg a melody) into plaintext guitar tabs.
 
+## Next Steps
+* [Get inspired from kord](https://github.com/synestematic/kord)
+
 ## Running Tool
 * `python test_ui.py` will launch cli ui for `'midifiles/sad_rude2.mid'`
 
