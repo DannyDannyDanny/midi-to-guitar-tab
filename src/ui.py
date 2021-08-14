@@ -1,9 +1,9 @@
-import sys,os
+import sys, os
 import curses
 from curses.textpad import Textbox, rectangle
-import filemanager as fm
-from moodoo_dev import generate_string_list
-from moodoo import moodoo
+import src.filemanager as fm
+from src.moodoo_dev import generate_string_list
+from src.moodoo import moodoo
 
 def ui_get_file():
     def get_file(stdscr):
