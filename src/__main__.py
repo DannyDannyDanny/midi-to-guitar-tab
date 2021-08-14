@@ -1,8 +1,8 @@
-import ui
-from moodoo import moodoo
 import os
-import filemanager as fm
-from moodoo_dev import generate_string_list
+from src import ui
+from src.moodoo import moodoo
+import src.filemanager as fm
+from src.moodoo import generate_string_list
 
 # Launch UI and get path to midi file
 # datfile = ui.ui_get_file()
