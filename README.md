@@ -1,6 +1,17 @@
 # Moodoo
-
 Python program for displaying / converting an midi file exported from ableton (containg a melody) into plaintext guitar tabs.
+
+## Install
+
+```
+git clone https://github.com/DannyDannyDanny/midi-to-guitar-tab/
+cd midi-to-guitar-tab
+pipenv install
+pipenv shell
+pip install -e .
+python -m src   # run main
+pytest          # test
+```
 
 ## Next Steps
 * [Get inspired from kord](https://github.com/synestematic/kord)
