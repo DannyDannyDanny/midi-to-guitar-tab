@@ -1,15 +1,8 @@
-import ui
-from moodoo import moodoo
+from src import ui
+from src.moodoo import moodoo
+import src.filemanager as fm
 import os
 
-def test_filemanager():
-    import filemanager as fm
-    somelist = ['a',1,[3,9]]
-    fm.put(somelist, 'dink.json')
-    getsomelist = fm.get('dink.json')
-    return somelist == getsomelist
-
-test_filemanager()
 
 def test_moodoo():
     datfile = ['/', 'U', 's', 'e', 'r', 's', '/', 'd', 't', 'h', '/', 'D', 'o', 'c', 'u', 'm', 'e', 'n', 't', 's', '/', 'd', 'e', 'v', '/', '2', '0', '1', '8', '/', '\n', 'm', 'i', 'd', 'i', '-', 't', 'o', '-', 'g', 'u', 'i', 't', 'a', 'r', '-', 't', 'a', 'b', '/', 'm', 'i', 'd', 'i', 'f', 'i', 'l', 'e', 's', '/', 's', '\n', 'a', 'd', '_', 'r', 'u', 'd', 'e', '2', '.', 'm', 'i', 'd', ' ', '\n']
@@ -22,7 +15,7 @@ def test_moodoo():
     vislist = m.note_bag_list_to_visual(notebaglist)
     return len(vislist) > 0
 
-test_moodoo()
+# test_moodoo()
 
 def test_mood_2():
     datfile = ui.ui_get_file()
