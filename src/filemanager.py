@@ -1,9 +1,8 @@
-import simplejson
 import json
 
 def put(data, filename):
 	try:
-		jsondata = simplejson.dumps(data, indent=4, skipkeys=True, sort_keys=True)
+		jsondata = json.dumps(data, indent=4, skipkeys=True, sort_keys=True)
 		fd = open(filename, 'w')
 		fd.write(jsondata)
 		fd.close()
