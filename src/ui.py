@@ -2,7 +2,7 @@ import sys, os
 import curses
 from curses.textpad import Textbox, rectangle
 import src.filemanager as fm
-from src.moodoo_dev import generate_string_list
+from src.moodoo import generate_string_list
 from src.moodoo import moodoo
 
 def ui_get_file():
